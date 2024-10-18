@@ -14,7 +14,9 @@ h2 {
     background-color: #fff;
     max-width: 390px;
 }
-
+.usercard {
+    margin: 15px;
+}
 .blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
