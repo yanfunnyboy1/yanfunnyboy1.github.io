@@ -5,8 +5,6 @@
     font-optical-sizing: auto;
     font-size: 400;
     font-style: normal;
-    background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
     
 }
 h2 {
@@ -18,8 +16,6 @@ h2 {
 }
 
 .blocks {
-    background-color: #fff;
-    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 250px 250px;
