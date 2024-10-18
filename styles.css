@@ -5,6 +5,9 @@
     font-optical-sizing: auto;
     font-size: 400;
     font-style: normal;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+    
 }
 h2 {
     font-size: 20px;
