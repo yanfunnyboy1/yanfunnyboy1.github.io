@@ -19,6 +19,7 @@ h2 {
 
 .blocks {
     background-color: #fff;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 250px 250px;
