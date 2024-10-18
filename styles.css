@@ -45,3 +45,10 @@ button:hover {
 .itemprice{
     margin: 10px;
 }
+@media (max-width: 250px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px;
+    }
+}
