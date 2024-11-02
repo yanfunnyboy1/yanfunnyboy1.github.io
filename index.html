@@ -26,7 +26,7 @@
         </div>
         <div class="content">
             <div class="content-main">
-                <h2 class="userWelcome">Welcome</h2>
+                <h2 id="userWelcome">Welcome</h2>
                 <img src="cat.gif" alt="cat">
             </div>
             <a href="/stake.html">
@@ -41,8 +41,8 @@
         let tg = window.Telegram.WebApp;
         tg.expand();
 
-        let userWelcome = document.getElementsByClassName("userWelcome");
-        userWelcome.innerText = `Welcome, $(tg.WebAppUser.username)`;
+        let userWelcome = document.getElementById("userWelcome");
+        userWelcome.innerText = `Welcome, ${tg.WebAppUser.username}`;
     </script>
 </body>
 
