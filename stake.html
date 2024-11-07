@@ -42,17 +42,6 @@
         <script>
             let tg = window.Telegram.WebApp;
             tg.expand();
-
-            var BackButton = tg.BackButton;
-            BackButton.show();
-
-            BackButton.onClick(function () {
-                tg.openTelegramLink("yanfunnyboy1.github.io");
-                tg.openLink("yanfunnyboy1.github.io");
-                BackButton.hide();
-            });
-
-
             const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
                 manifestUrl: 'yanfunnyboy1.github.io/tonconnect-manifest.json',
                 buttonRootId: 'connect-ton',
