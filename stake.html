@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake TON</title>
+    <link rel="stylesheet" href="globalstyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-menu">
+                <div id="connect-ton">
+
+                </div>
+                <div class="ton-balance">
+                    <img src="ton_symbol.png" alt="">
+                    <p>0.0000</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop">
+            <h2>Shop</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img src="cat.gif" alt="cat">
+                    <div class="price">
+                        <p>Price</p>
+                        <p>0.1 TON</p>
+                    </div>
+                    <button class="transaction">Stake</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+                manifestUrl: 'yanfunnyboy1.github.io/tonconnect-manifest.json',
+                buttonRootId: 'connect-ton',
+                uiPreferences: {
+                    borderRadius: 's',
+                    theme: 'LIGHT',
+                    colorsSet: {
+                        ['LIGHT']: {
+                            connectButton: {
+                                background: 'white',
+                                foreground: '#000000'
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+</body>
+
+</html>
