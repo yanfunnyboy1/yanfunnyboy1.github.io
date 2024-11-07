@@ -32,22 +32,6 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-        const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-            manifestUrl: 'yanfunnyboy1.github.io/tonconnect-manifest.json',
-            buttonRootId: 'connect-ton',
-            uiPreferences: {
-                borderRadius: 's',
-                theme: 'LIGHT',
-                colorsSet: {
-                    ['LIGHT']: {
-                        connectButton: {
-                            background: 'white',
-                            foreground: '#000000'
-                        }
-                    }
-                }
-            }
-        });
         let userWelcome = document.getElementById("userWelcome");
         userWelcome.innerText = `Welcome, ${tg.WebAppUser.user.username}`;
     </script>
